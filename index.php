@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <input type="number" name="" id="x" />
@@ -16,11 +15,6 @@
     <button  id="get2"> GET </button>
     <hr>
     <button  id="json1"> JSON1 </button>
-
-
-
-
-
 </body>
 <script>
     $(()=>{
@@ -50,7 +44,6 @@
             });
            
         });
-
         $("#json1").click(()=>{
          
             var url = "https://cj-android-demon.herokuapp.com/json2.php";
@@ -61,13 +54,11 @@
                         console.log(item);
                         console.log(item.fname);
                     });
-
                 })
                 .fail((shr, status, err)=>{
                     console.log(err);
                 });
         });
-
     });
 </script>
 </html>
